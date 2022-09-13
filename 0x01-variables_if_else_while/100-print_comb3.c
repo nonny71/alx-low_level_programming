@@ -7,22 +7,18 @@
  */
 int main(void)
 {
-	int x, y;
+	int num1, num2;
 
-	for (x = 48; x <= 56; x++)
+	for (num1 = 0; num1 < 9; num1++)
 	{
-		for (y = 49; y <= 57; y++)
+		for (num2 = num1 + 1; num2 < 10; num2++)
 		{
-			if (y > x)
-			{
-				putchar(x);
-				putchar(y);
-				if (x != 56 || y != 57)
-				{
-				putchar(',');
-				putchar(' ');
-				}
-			}
+			putchar((num1 % 10) + '0');
+			putchar((num2 % 10) + '0');
+			if (num1 == 8 && num2 == 9)
+				continue;
+			putchar(',');
+			putchar(' ');
 		}
 	}
 	putchar('\n');
