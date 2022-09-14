@@ -3,19 +3,18 @@
 /**
  * print_sign - Print the sign
  * @n: the number which the sign will be printed
- * @int: return type of number
  * Return: 1 if the number is greater than zero
  * 0 if the number is zero
  * -1 if the number is less than zero
  */
-int print_sign(int)
+int print_sign(int n)
 {
 	if (n > 0)
 	{
 		_putchar('+');
 		return (1);
 	}
-	else if ( == 0)
+	else if (n == 0)
 	{
 		_putchar('0');
 		return (0);
