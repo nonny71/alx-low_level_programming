@@ -7,7 +7,7 @@
  * @int: the return type of the numbers
  * Return: the last printed number should be 98
  */
-int print_to_98(int)
+int print_to_98(int n)
 {
 	if (n >= 98)
 	{
