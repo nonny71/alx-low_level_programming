@@ -11,7 +11,7 @@ int main(void)
 	unsigned long f1 = 0, f2 = 1, fsum;
 	float sum;
 
-	while(1)
+	while (1)
 	{
 		fsum = f1 + f2;
 		if (fsum > 4000000)
