@@ -1,4 +1,5 @@
-#iclude "main.h"
+#include "main.h"
+#include <stdio.h>
 
 /**
  * main - print the sum of even fibonacci number
@@ -19,6 +20,6 @@ int main(void)
 
 		++a;
 	}
-	printf("%ld\n", sum);
+	printf("%.0f\n", sum);
 	return (0);
 }
