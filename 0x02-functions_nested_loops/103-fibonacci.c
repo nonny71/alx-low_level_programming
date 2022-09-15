@@ -8,18 +8,19 @@
  */
 int main(void)
 {
-	int a = 0;
-	long b, c = 2, sum = c;
+	unsigned long f1 = 0, f2 = 1, fsum;
+	float sum;
 
-	while (c + b < 4000000)
+	while(1)
 	{
-		c += b;
-		if (c % 2 == 0)
-			sum += c;
-		b = c - b;
-
-		++a;
+		fsum = f1 + f2;
+		if (fsum > 4000000)
+			break;
+		if ((fsum % 2) == 0)
+			sum += fsum;
+		f1 = f2;
+		f2 = fsum;
 	}
-	printf("%ld\n", sum);
+	printf("%.0f\n", sum);
 	return (0);
 }
