@@ -13,10 +13,10 @@ int main(void)
 	{
 		if ((a % 3 == 0) || (a % 5 == 0))
 		{
-			b += a
+			b += a;
 		}
-		a++
+		a++;
 	}
-	Printf("%d\n", b);
+	printf("%d\n", b);
 	return (0);
 }
