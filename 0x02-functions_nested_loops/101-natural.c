@@ -1,0 +1,22 @@
+#include "main.h"
+
+/**
+ * main - print the sum  of all multiple of 3 and 5 up to 1024
+ *
+ * Return: Always 0
+ */
+int main(void)
+{
+	int a, b = 0;
+
+	while (a < 1024)
+	{
+		if ((a % 3 == 0) || (a % 5 == 0))
+		{
+			b += a
+		}
+		a++
+	}
+	Printf("%d\n", b);
+	return (0);
+}
