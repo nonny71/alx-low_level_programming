@@ -7,5 +7,9 @@
  */
 void print_number(int n)
 {
-	return (0);
+	int i;
+
+	for (i = 0; i < 100; i++)
+		_putchar(i + '0');
+	_putchar('\n');
 }
