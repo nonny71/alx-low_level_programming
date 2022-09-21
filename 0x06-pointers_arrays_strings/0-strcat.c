@@ -8,14 +8,11 @@
  */
 char *strcat(char *dest, const char *src)
 {
-	int l1, l2, i;
-	
-	l1 = strlen(dest);
-	l2 = strlen(src);
-	for (i = 0; i <= l2; i++)
-	{
-		dest[l2 + i] = src[i];
-	}
-	_putchar("%s", dest);
+	int i = 0, dest_len = 0;
+
+	while (dest[i++])
+		dest_len++;
+	for (i = 0; src[i]; i++)
+		dest[dest_len++] = src[i];
 	return (dest);
 }
