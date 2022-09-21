@@ -16,5 +16,6 @@ char *strcat(char *dest, const char *src)
 	{
 		dest[l2 + i] = src[i];
 	}
+	_putchar("%s", dest);
 	return (dest);
 }
