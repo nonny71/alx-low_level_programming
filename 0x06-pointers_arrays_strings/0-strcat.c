@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * strcat - Concatenates the string pointed
+ * strcat - Function to concatenates the string pointed
  * @dest: A pointer to the string to be concatenated
  * @src: The source string to be appended
  * Return: A pointer to the destination string
@@ -9,15 +9,16 @@
 char *strcat(char *dest, const char *src)
 {
 	int i, j;
-
+	
 	i = 0;
-	while (dest[i])
+	while (dest[i] != '\0')
 	{
 		i++;
 	}
-	for (j = 0; src[j]; j++)
+	for (j = 0; src[j] != '\0'; j++; i++)
 	{
-		dest[i++] = src[j++]
+		dest[i] = src[j];
 	}
+	dest[i] = '\0';
 	return (dest);
 }
