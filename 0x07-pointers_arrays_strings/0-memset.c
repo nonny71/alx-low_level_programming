@@ -13,7 +13,7 @@ void *_memset(void *s, int c, size_t n)
 
 	for (i = 0; i < n; i++)
 	{
-		s[i] = b;
+		s[i] = c;
 	}
 	return (s);
 
