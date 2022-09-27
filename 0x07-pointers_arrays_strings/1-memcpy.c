@@ -9,9 +9,10 @@
  */
 void *_memcpy(void *dest, const void *src, size_t n)
 {
-	unsigned int index;
+	unsigned int i;
 
-	for (index = 0; index < n; index++)
-		dest[index] = src[index];
+	for (i = 0; i < n; i++)
+		dest[i] = src[i];
+
 	return (dest);
 }
