@@ -51,7 +51,7 @@ int count_words(char *str)
  * @str: pointer to the string
  * Return: number of words in the string
  */
-char **strtow(char *str);
+char **strtow(char *str)
 {
 	char **strings;
 	int index = 0, words, w, letters, l;
