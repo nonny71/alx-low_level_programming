@@ -46,8 +46,7 @@ int count_words(char *str)
 }
 
 /**
- * count_words - count_words - function that count words in a string
- *		separated by a blank space
+ * strtow - function that returns a pointer to an array of strings
  * @str: pointer to the string
  * Return: number of words in the string
  */
