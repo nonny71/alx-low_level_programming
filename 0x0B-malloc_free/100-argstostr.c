@@ -11,7 +11,10 @@
 char *argstostr(int ac, char **av)
 {
 	char *str;
-	int arg, byte, index = 0, size = 0;
+	int arg;
+	int byte;
+	int index = 0;
+	int size = 0;
 
 	if (ac == 0 || av == NULL)
 		return ('\0');
