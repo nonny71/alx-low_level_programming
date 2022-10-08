@@ -49,8 +49,7 @@ char *create_xarray(int size)
 /**
  * iterate_zeroes - Iterates through a string of numbers containing
  *	leading zeroes until it hits a non-zero number
- * @str: The string of numbers to be iterate through
- * 
+ * @str: The string of numbers to be iterate through 
  * Return: A pointer to the next non-zero element
  */
 char *iterate_zeroes(char *str)
@@ -91,6 +90,7 @@ int get_digit(char c)
 void get_prod(char *prod, char *mult, int digit, int zeroes)
 {
 	int mult_len, num, tens = 0;
+
 	mult_len = find_len(mult) - 1;
 	mult += mult_len;
 
@@ -104,7 +104,7 @@ void get_prod(char *prod, char *mult, int digit, int zeroes)
 		if (*mult < '0' || *mult > '9')
 		{
 			printf("Error\n");
-			exit (98);
+			exit(98);
 		}
 		num = (*mult - '0') * digit;
 		num += tens;
