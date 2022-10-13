@@ -3,6 +3,8 @@
 #define CALC_H
 
 #include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
 
 /**
  * File: 3-calc.h
