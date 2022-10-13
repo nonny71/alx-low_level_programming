@@ -6,7 +6,7 @@
  * @array: The array of integers
  * @size: The size of the array
  * @cmp: A pointer to the function to be used to compare values
- * Return: If no element matches or size <= 0 
+ * Return: If no element matches or size <= 0
  * -1 if size <= 0 or integer that matches condition of @cmp
  *  wasn't found in @array
  *  NULL if @array || @cmp is NULL
