@@ -30,15 +30,13 @@ char *_strdup(const char *str)
 {
 	char *dup = NULL;
 	size_t size = 0;
-
-	if (!str)
 	
-	return (NULL);
-
+	if (!str)
+		return (NULL);
 	while (str[size++])
-			;
+		;
 	dup = malloc(sizeof(char) * size);
-
+	
 	if (!dup)
 		return (NULL);
 
