@@ -30,7 +30,7 @@ char *_strdup(const char *str)
 {
 	char *dup = NULL;
 	size_t size = 0;
-	
+
 	if (!str)
 		return (NULL);
 	while (str[size++])
@@ -39,7 +39,6 @@ char *_strdup(const char *str)
 	
 	if (!dup)
 		return (NULL);
-
 	while (size--)
 		dup[size] = str[size];
 	return (dup);
