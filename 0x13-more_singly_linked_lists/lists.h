@@ -33,5 +33,6 @@ size_t free_listint_safe(listint_t **h);
 listint_t *find_listint_loop(listint_t *head);
 int _putchar(char c);
 
-
+size_t check_looped_listint(const listint_t *head);
+size_t check_looped_listfree(listint_t *head);
 #endif /* LISTS_H */
